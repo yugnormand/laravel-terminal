@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'cc15f188424202151a96fe1f3a8dc5f6e2fc98de',
+    'reference' => 'c9e2801ac220464b675e0993b3491bc97ede797e',
     'name' => 'todocoding/laravel-terminal',
   ),
   'versions' => 
@@ -1079,7 +1079,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'cc15f188424202151a96fe1f3a8dc5f6e2fc98de',
+      'reference' => 'c9e2801ac220464b675e0993b3491bc97ede797e',
     ),
     'vlucas/phpdotenv' => 
     array (
