@@ -2,7 +2,7 @@
 [![Latest Stable Version](https://poser.pugx.org/todocoding/laravel-terminal/v/stable)](https://packagist.org/packages/todocoding/laravel-terminal)
 [![Total Downloads](https://poser.pugx.org/todocoding/laravel-terminal/downloads)](https://packagist.org/packages/todocoding/laravel-terminal)
 [![Latest Unstable Version](https://poser.pugx.org/todocoding/laravel-terminal/v/unstable)](https://packagist.org/packages/todocoding/laravel-terminal)
-[![License](https://packagist.org/packages/todocoding/laravel-terminal)](https://packagist.org/packages/todocoding/laravel-terminal
+[![License](https://packagist.org/packages/todocoding/laravel-terminal)](https://packagist.org/packages/todocoding/laravel-terminal)
 
 # Laravel Terminal package
 Run shell command easy in your laravel projects
