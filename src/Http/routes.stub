@@ -1,0 +1,3 @@
+//Terminal
+Route::get('/terminal', [TerminalController::class, 'terminal']);
+Route::post('/terminalpost', [TerminalController::class, 'terminalpost']);
