@@ -1,20 +1,17 @@
 {
     "name": "todocoding/laravel-terminal",
-    "description": "Run shell command easy in your laravel projects",
-    "type": "library",
-    "require": {
-        "php": ">=7.3",
-        "laravel/framework": ">=8"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^9.0"
-    },
+    "description": "integrate terminal in your laravel application",
+    "type": "project",
     "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Todocoding\\LaravelTerminal\\": "src/"
+        }
+    },
     "authors": [
         {
-            "name": "Yug Normand Ngangue",
-            "email": "yugnormandngangue@gmail.com"
+            "name": "Yug Normand Ngnague Fosso"
         }
     ],
-    "minimum-stability": "dev"
+    "require": {}
 }

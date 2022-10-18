@@ -1,39 +1,34 @@
-<?php
+<?php namespace Todocoding\LaravelTerminal;
 
-namespace Todocoding\Terminal;
-
-use Illuminate\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
 
-class TerminalServiceProvider extends ServiceProvider
-{
+class TerminalServiceprovider extends ServiceProvider{
+
+
     /**
-     * publish config file into project config directory
+     * Indicates if loading of the provider is deferred.
      *
-     * @return void
+     * @var bool
      */
+    protected $defer = false;
+
     public function boot()
     {
-        $this->publishes([
+        // Get namespace
+        $nameSpace = $this->app->getNamespace();
 
-            __DIR__ . '/../config.php' => config_path( 'terminal.php' ),
+        // Routes
+        $this->app->router->group(['namespace' => $nameSpace . 'Http\Controllers'], function()
+        {
+            require __DIR__.'/Http/routes.php';
+        });
+
+        // Views
+        $this->publishes([
+            __DIR__.'/../views' => base_path('resources/views'),
         ]);
     }
 
-    /**
-     * Register terminal command singleton
-     * and set configs for terminal
-     *
-     * @author Alireza Josheghani <josheghani.dev@gmail.com>
-     * @since 13 Sep, 2017
-     */
-    public function register()
-    {
-        $this->app->singleton('terminal', function (Application $app){
+    public function register() {}
 
-            $aliases = config('terminal.aliases');
-
-            return $app->make(Command::class)->aliases($aliases);
-        });
-    }
 }
