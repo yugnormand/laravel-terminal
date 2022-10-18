@@ -18,10 +18,10 @@ class TerminalServiceprovider extends ServiceProvider{
         $nameSpace = $this->app->getNamespace();
 
         // Routes
-        $this->app->router->group(['namespace' => $nameSpace . 'Http\Controllers'], function()
-        {
-            require __DIR__.'/Http/routes.php';
-        });
+        // $this->app->router->group(['namespace' => $nameSpace . 'Http\Controllers'], function()
+        // {
+        //     require __DIR__.'/Http/routes.php';
+        // });
 
         // Views
         $this->publishes([
