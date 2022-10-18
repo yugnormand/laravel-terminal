@@ -25,9 +25,15 @@ class TerminalServiceprovider extends ServiceProvider{
 
         // Views
         $this->publishes([
-            __DIR__.'/../src/Http/Controllers' => base_path('app//Http/Controllers'),
-            __DIR__.'/../views' => base_path('resources/views/terminal'),
+        __DIR__.'/../src/Http/Controllers' => base_path('app/Http/Controllers'),
+        __DIR__.'/../views' => base_path('resources/views/terminal'),
         ]);
+
+        file_put_contents(
+        base_path('routes/web.php'),
+        file_get_contents(__DIR__.'/../src/Http/routes.php'),
+        FILE_APPEND
+        );
     }
 
     public function register() {}
