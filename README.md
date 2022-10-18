@@ -30,8 +30,10 @@ and then run
 php artisan vendor:publish --provider="Todocoding\LaravelTerminal\TerminalServiceProvider"
 ```
 To generate the different files, which you will use
+``` php
 ⇒ TerminalController.php
 ⇒ terminal/terminal.blade.php
+```
 
 To launch the terminal 
 ``` php
