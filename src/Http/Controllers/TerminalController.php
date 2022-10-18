@@ -10,7 +10,7 @@ class TerminalController extends Controller
 {
     //
     public function terminal(){
-        return view('terminal');
+        return view('terminal.terminal');
     }
 
     public function terminalpost(Request $request){

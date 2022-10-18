@@ -26,7 +26,7 @@ class TerminalServiceprovider extends ServiceProvider{
         // Views
         $this->publishes([
             __DIR__.'/../src/Http/Controllers' => base_path('app/Http/Controllers'),
-            __DIR__.'/../views' => base_path('resources/views/terminal/terminal'),
+            __DIR__.'/../views' => base_path('resources/views/terminal'),
         ]);
 
         // file_put_contents(
