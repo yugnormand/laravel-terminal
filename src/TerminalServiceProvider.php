@@ -30,9 +30,9 @@ class TerminalServiceprovider extends ServiceProvider{
         ]);
 
         // file_put_contents(
-        //         base_path('routes/web.php'),
-        //         file_get_contents(__DIR__.'/../src/Http/routes.php'),
-        //         FILE_APPEND
+        //     base_path('routes/web.php'),
+        //     file_get_contents(__DIR__.'/../src/Http/routes.stub'),
+        //     FILE_APPEND
         // );
     }
 
