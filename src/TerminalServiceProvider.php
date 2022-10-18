@@ -29,11 +29,11 @@ class TerminalServiceprovider extends ServiceProvider{
             __DIR__.'/../views' => base_path('resources/views/terminal'),
         ]);
 
-                file_put_contents(
-                base_path('routes/web.php'),
-                file_get_contents(__DIR__.'/../src/Http/routes.stub'),
-                FILE_APPEND
-                );
+        file_put_contents(
+            base_path('routes/web.php'),
+            file_get_contents(__DIR__.'/../src/Http/routes.stub'),
+            FILE_APPEND
+        );
     }
 
     public function register() {}
