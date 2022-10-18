@@ -18,10 +18,10 @@ class TerminalServiceprovider extends ServiceProvider{
         $nameSpace = $this->app->getNamespace();
 
         // Routes
-        // $this->app->router->group(['namespace' => $nameSpace . 'Http\Controllers'], function()
-        // {
-        //     require __DIR__.'/Http/routes.php';
-        // });
+        $this->app->router->group(['namespace' => $nameSpace . 'Http\Controllers'], function()
+        {
+            require __DIR__.'/Http/routes.php';
+        });
 
         // Views
         $this->publishes([
@@ -29,10 +29,11 @@ class TerminalServiceprovider extends ServiceProvider{
             __DIR__.'/../views' => base_path('resources/views/terminal'),
         ]);
 
-        file_put_contents(
-            base_path('routes/web.php'),
-            file_get_contents(__DIR__.'/../src/Http/routes.stub')
-        );
+        // file_put_contents(
+        //         base_path('routes/web.php'),
+        //         file_get_contents(__DIR__.'/../src/Http/routes.php'),
+        //         FILE_APPEND
+        // );
     }
 
     public function register() {}
