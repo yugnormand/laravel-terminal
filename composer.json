@@ -10,8 +10,10 @@
     },
     "authors": [
         {
-            "name": "Yug Normand Ngnague Fosso"
+            "name": "Yug Normand Ngnague Fosso",
+            "email": "yugnormandngangue@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {}
 }
