@@ -15,7 +15,7 @@ Run shell command easy in your laravel projects
 Via Composer
 
 ``` bash
-$ composer require todocoding/laravel-terminal
+composer require todocoding/laravel-terminal
 ```
 
 ## Config
